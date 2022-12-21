@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illuminatrix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <div class="own-wrapper">
+      <header class="header">
+        <div class="container header-cont">
+          <a href="./index.html" class="header-link"><img src="./icon/Logo.svg" alt="Logo" width="68" height="55" class="header-logo" /></a>
+
+          <!-- Мобильное меню -->
+          <div class="mobile-overley" data-menu>
+            <div class="mobile-menu">
+              <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list list">
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">О нас</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Услуги и цены</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Мастера</a></li>
+                  <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="mobile-contacs">
+                <a class="mobile-contacs__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="mobile-contacs__btn">онлайн-запись</button>
+                <ul class="mobile-link list">
+                  <li class="mobile-link__item">
+                    <a class="mobile-link__link" href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  </li>
+                  <li class="mobile-link__item"><a class="mobile-link__link" href="http://" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <button class="menu-button" data-menu-button aria-expanded="false" aria-label="Переключатель мобильного меню">
+            <svg class="menu-button__icon" width="40" height="40">
+              <use class="menu-button__icon-menu" href="./icon/symbol-defs.svg#icon-menu_40px"></use>
+              <use class="menu-button__icon-close" href="./icon/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <!-- Закончилось мобильное меню -->
+          <div class="menu-container">
+            <nav class="nav">
+              <ul class="nav-list list">
+                <li class="nav-item"><a href="/" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Installers</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="header-wrapper">
+              <a href="tel:+380441111111" class="header-phone">+1 (646) 645-4641</a>
+              <a href="#form">
+                <button type="button" class="header-button">Contact Online</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Секция Герой -->
+      <section class="hero">
+        <div class="container hero__container">
+          <ul class="hero-list list">
+            <li class="hero-item"><a href="/" class="hero-link">Instagram</a></li>
+            <li class="hero-item"><a href="/" class="hero-link">YouTube</a></li>
+          </ul>
+          <div class="hero__wrapper">
+            <p class="hero-uppertitle decor-text-light" lang="en">Graphics Installations in New York </p>
+            <h1 class="hero-title">Graphics Instalations</h1>
+            <p class="hero-subtitle" lang="en">We are experts in all sorts of graphics Installations. We work quickly, carefully, and professionally.</p>
+          </div>
+          <ul class="hero-list-bt list">
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--left">Назад</button></li>
+            <li class="hero__item-bt"><button type="button" class="hero__btn hero__btn--right">Вперед</button></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Секция О нас -->
+    <section class="about section">
+      <div class="container about-cont">
+        <ul class="about-list list">
+          <li class="about-item">
+            <picture>
+              <source srcset="./img/about/pic-1_lg.jpg 1x, ./img/about/pic-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/about/pic-1_md.jpg 1x, ./img/about/pic-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <img src="./img/about/pic-1_lg.jpg" alt="Стрижка бороды" />
+            </picture>
+          </li>
+          <li class="about-item">
+            <picture>
+              <source srcset="./img/about/pic-2_lg.jpg 1x, ./img/about/pic-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/about/pic-2_md.jpg 1x, ./img/about/pic-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <img src="./img/about/pic-2_lg.jpg" alt="Стрижка волос" />
+            </picture>
+          </li>
+        </ul>
+        <div class="about-wrapper">
+          <p class="about-text decor-text-dark">About Us</p>
+          <h2 class="about-title">Best Installers in your State</h2>
+          <h3 class="about-subtitle">If you want to add a perfectly installed graphics art to your location – you're at the rigth spot.</h3>
+          <p class="about-desc">
+            We are a team, who never stops on achieved goals and are looking for new opportunities. And when you meet us you don't want to meet nobody else.
+            We are a team that is always "on the same wave" with our clients. Therefore, we are always ready to improve for everyone who
+            comes to us!
+          </p>
+          <a href="#form">
+            <button type="button" class="about-btn">Contact Online</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Секция Цены -->
+    <section class="price section">
+      <div class="container price-container">
+        <p class="price-header decor-text-light">Don't waste you're time - Call Us!</p>
+        <h2 class="price-title">Services we provide</h2>
+        <ul class="price-list list">
+          <li class="price-item price-item-left">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-inner-name">Self Adhesive Vinyl Installations</span> <span class="price-inner-text"></span>
+              </li>
+              <li class="price-inner-item"><span class="price-inner-name"> Optically clear </span> <span class="price-inner-text"></span></li>
+              <li class="price-inner-item"><span class="price-inner-name"> Privacy film </span><span class="price-inner-text"></span></li>
+              <li class="price-inner-item">
+                <span class="price-inner-name"> Custom vynil wraps </span> <span class="price-inner-text"></span>
+              </li>
+            </ul>
+          </li>
+          <li class="price-item price-item-right">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-inner-name"> Picture frames Install </span> <span class="price-inner-text"></span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name"> Banners for the event </span> <span class="price-inner-text"></span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name"> 3D dimentional lettering install </span> <span class="price-inner-text"></span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name"> Site Surveys </span> <span class="price-inner-text"></span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="#form">
+          <button type="button" class="price-btn">Contact Online</button>
+        </a>
+      </div>
+    </section>
+    <!-- Секция преимущества -->
+    <section class="plus section">
+      <div class="container plus-cont">
+        <ul class="plus-list list">
+          <li class="plus-item">
+            <p class="plus-list-number">100</p>
+
+            <p class="plus-list-text">Satisfied clients</p>
+          </li>
+          <li class="plus-item">
+            <p class="plus-list-number">50</p>
+
+            <p class="plus-list-text">Awards for best provided services</p>
+          </li>
+          <li class="plus-item">
+            <p class="plus-list-number">20</p>
+
+            <p class="plus-list-text">Best Installers of New York</p>
+          </li>
+          <li class="plus-item">
+            <p class="plus-list-number">100</p>
+
+            <p class="plus-list-text">Discounts for permanent clients</p>
+          </li>
+        </ul>
+        <div class="plus-wrapper-text">
+          <p class="plus-header decor-text-dark">Old Traditional school</p>
+          <h2 class="plus-title">Why come to us?</h2>
+          <p class="plus-text">Only good reviews about us. But best is to see 1 time, than to read 10 times.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Секция Мастера -->
+    <section class="master section">
+      <div class="container">
+        <p class="master-header decor-text-dark">For those who value meticulous quality</p>
+        <h2 class="master-title">Our Installers</h2>
+        <ul class="master-list list">
+          <li class="master__item">
+            <picture class="master-img">
+              <source srcset="./img/masters/img-1_lg.jpg 1x, ./img/masters/img-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/masters/img-1_md.jpg 1x, ./img/masters/img-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/masters/img-1_sm.jpg 1x, ./img/masters/img-1_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/masters/img-1_sm.jpg" alt="Мастер 1" />
+            </picture>
+            <h3 class="master-subtitle">Maks </h3>
+            <p lang="en" class="master-text">Extreme Installer</p>
+            <ul class="master-inner-list list">
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="master__item">
+            <picture class="master-img">
+              <source srcset="./img/masters/img-2_lg.jpg 1x, ./img/masters/img-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/masters/img-2_md.jpg 1x, ./img/masters/img-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/masters/img-2_sm.jpg 1x, ./img/masters/img-2_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/masters/img-2_sm.jpg" alt="Мастер 2" />
+            </picture>
+            <h3 class="master-subtitle">Vadim</h3>
+            <p lang="en" class="master-text">Extreme Installer</p>
+            <ul class="master-inner-list list">
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="master__item">
+            <picture class="master-img">
+              <source srcset="./img/masters/img-3_lg.jpg 1x, ./img/masters/img-3_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/masters/img-3_md.jpg 1x, ./img/masters/img-3_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/masters/img-3_sm.jpg 1x, ./img/masters/img-3_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/masters/img-3_sm.jpg" alt="Мастер 3" />
+            </picture>
+            <h3 class="master-subtitle">Mario</h3>
+            <p lang="en" class="master-text">Extreme Installer</p>
+            <ul class="master-inner-list list">
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="master-inner-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="master-link-icon">
+                  <svg class="master-icon" width="20" height="20">
+                    <use href="./icon/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Секция Наши работы -->
+    <section class="works section">
+      <div class="container">
+        <h2 hidden>Галерея работ</h2>
+        <p class="works-header decor-text-dark">An unknown fact is that “Bubble-free” and “Comply” technologies are obtained due to the silicone release liner.</p>
+        <ul class="works-list list">
+          <li class="works__item">
+            <picture>
+              <source srcset="./img/gallery/pic-1_lg.jpg 1x, ./img/gallery/pic-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/gallery/pic-1_md.jpg 1x, ./img/gallery/pic-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/gallery/pic-1_sm.jpg 1x, ./img/gallery/pic-1_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/gallery/pic-1_sm.jpg" alt="Стрижка" />
+            </picture>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source srcset="./img/gallery/pic-2_lg.jpg 1x, ./img/gallery/pic-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/gallery/pic-2_md.jpg 1x, ./img/gallery/pic-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/gallery/pic-2_sm.jpg 1x, ./img/gallery/pic-2_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/gallery/pic-2_sm.jpg" alt="Бритье" />
+            </picture>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source srcset="./img/gallery/pic-3_lg.jpg 1x, ./img/gallery/pic-3_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/gallery/pic-3_md.jpg 1x, ./img/gallery/pic-3_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/gallery/pic-3_sm.jpg 1x, ./img/gallery/pic-3_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/gallery/pic-3_sm.jpg" alt="Процедуры релакса" />
+            </picture>
+          </li>
+          <li class="works__item">
+            <picture>
+              <source srcset="./img/gallery/pic-4_lg.jpg 1x, ./img/gallery/pic-4_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
+              <source srcset="./img/gallery/pic-4_md.jpg 1x, ./img/gallery/pic-4_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
+              <source srcset="./img/gallery/pic-4_sm.jpg 1x, ./img/gallery/pic-4_sm@2x.jpg 2x" type="image/jpeg" />
+              <img src="./img/gallery/pic-4_sm.jpg" alt="Корректировка стрижки" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Секция Контактная информация -->
+    <section class="cont section">
+      <div class="container cont-container">
+        <div class="cont-wrapper1">
+          <h2 hidden>Контактная информация</h2>
+          <h3>Contact Online</h3>
+
+          <form action="" class="contacts-form" id="form">
+            <div class="form-wrapper">
+              <label class="contacts-form-label">
+                <input type="text" class="contacts-form-input" placeholder=" " required minlength="3" maxlength="12" />
+                <span class="form-input-label">Nane*</span>
+              </label>
+              <label class="contacts-form-label">
+                <input type="tel" class="contacts-form-input" placeholder=" " required />
+                <span class="form-input-label">Phone #*</span>
+              </label>
+            </div>
+            <label class="contacts-form-label">
+              <textarea name="feedback" class="contacts-form-input textarea" rows="5" placeholder=" "></textarea>
+              <span class="form-input-label label-textarea">Message</span>
+            </label>
+            <button type="submit" class="cont-btn">Send</button>
+          </form>
+        </div>
+        <div class="cont-wrapper2">
+          <div class="cont-wrapper2__left">
+            <h3>Contacts</h3>
+            <address class="adr">
+              <ul class="list">
+                <li>
+                  <img src="./icon/map-pin.svg" alt="Расположение" />
+                  <p>
+                    8693 Bay Pkwy, Apt. 12 <br />
+                    Brooklyn, NY 11214
+                  </p>
+                </li>
+                <li class="adr-tel">
+                  <img src="./icon/phone.svg" alt="Телефон" />
+                  <a href="tel:+380441111111">+1 (646) 645-4641</a>
+                </li>
+                <li class="adr-email">
+                  <img src="./icon/mail.svg" alt="Email" />
+                  <a href="mailto:illuminatrixnyc@gmail.com">illuminatrixnyc@gmail.com</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="cont-wrapper2__right">
+            <h4>Working hours</h4>
+            <p class="const-text">Mon - Fri с <time datetime="9:00">9:00am</time> до <time datetime="10:00pm"> 10:00pm</time></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </main> -->
+    <footer class="footer">
+      <div class="container footer-cont">
+        <p>&copyCopyright 2022</p>
+        <ul class="footer-list list">
+          <li class="footer-item"><a href="/">Instagram</a></li>
+          <li class="footer-item"><a href="/">YouTube</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

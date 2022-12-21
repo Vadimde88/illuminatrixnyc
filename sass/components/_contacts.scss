@@ -1,0 +1,92 @@
+/* section Contacs */
+.cont {
+  background-color: var(--secondary-background-color);
+  background-image: url(../img/contacts/bg-cont_sm.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/contacts/bg-cont_sm@2x.png);
+    background-position: bottom calc(50% - 540px) right 50%;
+  }
+  background-position: bottom calc(50% - 300px) right 50%;
+  background-repeat: no-repeat;
+  z-index: 15;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../img/contacts/bg-cont_md.png);
+    background-position: bottom calc(50% - 300px) right 50%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contacts/bg-cont_md@2x.png);
+      background-position: bottom calc(50% - 520px) right 50%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../img/contacts/bg-cont_lg.png);
+    background-position: top 50% right calc(50% - 300px);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/contacts/bg-cont_lg@2x.png);
+      background-position: top 50% right calc(50% - 600px);
+    }
+  }
+}
+
+.cont-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.cont-wrapper1,
+.cont-wrapper2 {
+  flex-basis: calc(100% / 2);
+}
+
+.cont-wrapper1 {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 84px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 112px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 40px;
+    padding-right: 60px;
+  }
+}
+
+.cont-wrapper2 {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+  }
+}
+
+.cont-wrapper2__left,
+.cont-wrapper2__right {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // flex-basis: ((100% - 30px) / 2);
+    flex-basis: 50%;
+  }
+}
+
+.cont h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-white-color);
+
+  margin-bottom: 44px;
+}

@@ -1,0 +1,116 @@
+/* section master */
+.master {
+  background-color: var(--light-background-color);
+}
+
+.master-header {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 150px;
+  }
+}
+.master-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 150px;
+  }
+}
+.master-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.master__item {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.master-img {
+  margin-bottom: 30px;
+}
+
+.master h3,
+.master-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  color: var(--primary-title-color);
+
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+.master-list p,
+.master-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--accent-color);
+
+  margin-bottom: 30px;
+}
+
+.master-inner-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.master-inner-item {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+  color: var(--primary-title-color);
+
+  outline: 1px solid tomato;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.master-inner-item:hover,
+.master-inner-item:focus {
+  color: var(--accent-color);
+}
+
+.master-link-icon {
+  list-style: none;
+  color: currentColor;
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.master-icon {
+  fill: currentColor;
+}

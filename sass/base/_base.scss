@@ -1,0 +1,98 @@
+@import "./reset";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.container {
+  max-width: 480px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  // outline: 2px solid tomato;
+  @media screen and(min-width:768px) {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  //   outline: 2px solid tomato;
+}
+
+.own-wrapper {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/Slider-img-3_sm.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/Slider-img-3_sm@2x.jpg);
+  }
+
+  @media screen and(min-width:768px) {
+    max-width: 768px;
+    background-size: cover;
+    background-image: url(../img/Slider-img-3_md.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/Slider-img-3_md@2x.jpg);
+    }
+  }
+
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+    background-size: cover;
+    background-position: 155px;
+    background-image: url(../img/Slider-img-3_lg.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../img/Slider-img-3_lg@2x.jpg);
+    }
+  }
+}
+
+/* Decor */
+.decor-text-light::before {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: var(--main-decor-color);
+}
+
+.decor-text-dark::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: var(--primary-title-color);
+}

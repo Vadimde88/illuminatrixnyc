@@ -1,0 +1,22 @@
+// variables
+@import "./variables/variables";
+
+// utils
+@import "./utils/normalize";
+@import "./utils/utils";
+
+// base style
+@import "./base/base";
+
+// components
+@import "./components/header";
+@import "./components/_mobile-menu";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/price";
+@import "./components/plus";
+@import "./components/master";
+@import "./components/works";
+@import "./components/contacts";
+@import "./components/form";
+@import "./components/footer";

@@ -1,0 +1,34 @@
+/* section Our works */
+.works p,
+.works-header {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+
+  margin-bottom: 44px;
+}
+
+.works-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.works__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

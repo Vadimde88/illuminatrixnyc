@@ -1,0 +1,132 @@
+/* section plus */
+.plus-cont {
+  display: flex;
+  gap: 44px;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 2);
+    flex-direction: row;
+  }
+}
+
+.plus-list {
+  color: var(--primary-title-color);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  
+  @media screen and (max-width: 429px) {
+     gap: 30px;
+  }
+
+  @media screen and (min-width: 429px) and (max-width:1199px) {
+    width: 370px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 100px;
+  }
+}
+
+.plus-item {
+  padding: 20px 24px;
+  min-height: 133px;
+  width: 170px;
+  background-color: var(--light-background-color);
+}
+
+.plus-item:nth-child(2n + 1) {
+  margin-right: 30px;
+
+  @media screen and (max-width: 429px) {
+    margin: 0;
+}
+}
+
+.plus-item:nth-child(2n) {
+  margin-top: 35px;
+
+  @media screen and (max-width: 429px) {
+    margin: 0;
+}
+}
+
+.plus-list-number {
+  position: relative;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 6px;
+}
+
+.plus-list-number::after {
+  position: absolute;
+  top: 7px;
+  /* left: 80%; */
+  content: "+";
+  width: 13px;
+  height: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: var(--accent-color);
+}
+
+/* Если иконкой делать */
+/* .plus-icon {
+  position: absolute;
+  top: 7px;
+  left: calc(100% + 2px);
+
+  top: 27px;
+  right: 30px;
+  display: inline-block;
+} */
+
+.plus-list-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.plus-wrapper-text {
+  @media screen and (max-width:1199px) {
+    max-width: 500px;
+  }
+}
+
+.plus-header {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+
+  margin-bottom: 20px;
+}
+
+.plus-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+
+  margin-bottom: 20px;
+}
+.plus-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--primary-text-color);
+}
