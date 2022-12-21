@@ -91,6 +91,7 @@ body {
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-image:linear-gradient(to right, rgb(47 48 58 / 95%), rgb(47 48 58 / 42%)), url(../img/Slider-img-3_sm.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1279,26 +1280,26 @@ body {
   background-color: var(--secondary-background-color);
   background-image: url(../img/contacts/bg-cont_sm.png);
   background-blend-mode:overlay;
-  background-position: bottom calc(50% - 300px) right 50%;
+  background-position: bottom calc(90% - 300px) right 50%;
   background-repeat: no-repeat;
   z-index: 15;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .cont {
     background-image: url(../img/contacts/bg-cont_sm@2x.png);
-    background-position: bottom calc(50% - 540px) right 50%;
+    background-position: bottom calc(90% - 540px) right 50%;
   }
 }
 @media screen and (min-width: 768px) {
   .cont {
     background-image: url(../img/contacts/bg-cont_md.png);
-    background-position: bottom calc(50% - 300px) right 50%;
+    background-position: bottom calc(90% - 300px) right 50%;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .cont {
     background-image: url(../img/contacts/bg-cont_md@2x.png);
-    background-position: bottom calc(50% - 520px) right 50%;
+    background-position: bottom calc(90% - 520px) right 50%;
   }
 }
 @media screen and (min-width: 1200px) {
