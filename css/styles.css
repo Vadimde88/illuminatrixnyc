@@ -1280,14 +1280,14 @@ body {
   background-color: var(--secondary-background-color);
   background-image: url(../img/contacts/bg-cont_sm.png);
   background-blend-mode:overlay;
-  background-position: bottom calc(90% - 300px) right 50%;
+  background-position: bottom calc(85% - 300px) right 50%;
   background-repeat: no-repeat;
   z-index: 15;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .cont {
     background-image: url(../img/contacts/bg-cont_sm@2x.png);
-    background-position: bottom calc(90% - 540px) right 50%;
+    background-position: bottom calc(85% - 540px) right 50%;
   }
 }
 @media screen and (min-width: 768px) {
