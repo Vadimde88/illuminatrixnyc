@@ -1278,6 +1278,7 @@ body {
 .cont {
   background-color: var(--secondary-background-color);
   background-image: url(../img/contacts/bg-cont_sm.png);
+  background-blend-mode:overlay;
   background-position: bottom calc(50% - 300px) right 50%;
   background-repeat: no-repeat;
   z-index: 15;
