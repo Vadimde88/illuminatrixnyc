@@ -15,6 +15,9 @@
   --light-background-color: #f7f7f7;
   /* decor */
   --main-decor-color: rgba(157, 164, 189, 0.6);
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
 }
 
 .list {
@@ -1685,7 +1688,6 @@ footer ul li a:focus {
 
 .gallery {
   display: grid;
-  width: 1200px;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-auto-rows: 240px;
   grid-gap: 12px;
