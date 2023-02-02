@@ -326,40 +326,36 @@
       <div class="container">
         <h2 hidden>Галерея работ</h2>
         <p class="works-header decor-text-dark">An unknown fact is that “Bubble-free” and “Comply” technologies are obtained due to the silicone release liner.</p>
-        <ul class="works-list list">
-          <li class="works__item">
-            <picture>
-              <source srcset="./img/gallery/pic-1_lg.jpg 1x, ./img/gallery/pic-1_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/pic-1_md.jpg 1x, ./img/gallery/pic-1_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="./img/gallery/pic-1_sm.jpg 1x, ./img/gallery/pic-1_sm@2x.jpg 2x" type="image/jpeg" />
-              <img src="./img/gallery/pic-1_sm.jpg" alt="Стрижка" />
-            </picture>
-          </li>
-          <li class="works__item">
-            <picture>
-              <source srcset="./img/gallery/pic-2_lg.jpg 1x, ./img/gallery/pic-2_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/pic-2_md.jpg 1x, ./img/gallery/pic-2_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="./img/gallery/pic-2_sm.jpg 1x, ./img/gallery/pic-2_sm@2x.jpg 2x" type="image/jpeg" />
-              <img src="./img/gallery/pic-2_sm.jpg" alt="Бритье" />
-            </picture>
-          </li>
-          <li class="works__item">
-            <picture>
-              <source srcset="./img/gallery/pic-3_lg.jpg 1x, ./img/gallery/pic-3_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/pic-3_md.jpg 1x, ./img/gallery/pic-3_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="./img/gallery/pic-3_sm.jpg 1x, ./img/gallery/pic-3_sm@2x.jpg 2x" type="image/jpeg" />
-              <img src="./img/gallery/pic-3_sm.jpg" alt="Процедуры релакса" />
-            </picture>
-          </li>
-          <li class="works__item">
-            <picture>
-              <source srcset="./img/gallery/pic-4_lg.jpg 1x, ./img/gallery/pic-4_lg@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)" />
-              <source srcset="./img/gallery/pic-4_md.jpg 1x, ./img/gallery/pic-4_md@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)" />
-              <source srcset="./img/gallery/pic-4_sm.jpg 1x, ./img/gallery/pic-4_sm@2x.jpg 2x" type="image/jpeg" />
-              <img src="./img/gallery/pic-4_sm.jpg" alt="Корректировка стрижки" />
-            </picture>
-          </li>
-        </ul>
+        <ul class="gallery js-gallery"></ul>
+        
+        <div class="lightbox js-lightbox">
+          <div class="lightbox__overlay"></div>
+        
+          <button type="button" class="button-left" data-action="arrow-left">
+            <svg class="arrow-left" viewBox="0 0 9 14">
+              <path class="svg-arrow-left"
+                d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+              </path>
+            </svg>
+          </button>
+        
+          <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="" />
+          </div>
+        
+          <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+        
+          <button type="button" class="button-right" data-action="arrow-right">
+            <svg class="arrow-right" viewBox="0 0 9 14">
+              <path class="svg-arrow-right"
+                d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        
+        <script src="./js/index.js" type="module"></script>
+        <script src="./js/gallery-items.js" type="module"></script>
       </div>
     </section>
     <!-- Секция Контактная информация -->
