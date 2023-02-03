@@ -176,12 +176,12 @@ body {
 }
 
 .header-link {
-  margin-left: 40px;
   margin-right: 54px;
 }
 @media screen and (min-width: 1199px) {
   .header-link {
     margin-right: 70px;
+    margin-left: 40px;
   }
 }
 
@@ -447,7 +447,6 @@ body {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
